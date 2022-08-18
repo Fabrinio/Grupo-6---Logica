@@ -18,6 +18,7 @@ programa
 			escreva("\n3-Listar Quartos")
 			escreva("\n4-Faturamento")
 			escreva("\n5-Sair do Progama\n")
+			escreva("Digite a opção desejada: \n")
 			leia(opcao)
 			limpa()
 			
@@ -120,7 +121,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1948; 
+ * @POSICAO-CURSOR = 514; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
