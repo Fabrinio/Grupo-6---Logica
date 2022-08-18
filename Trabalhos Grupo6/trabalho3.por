@@ -17,7 +17,7 @@ programa
 			escreva("\n2-Internação")
 			escreva("\n3-Listar Quartos")
 			escreva("\n4-Faturamento")
-			escreva("\n5-Sair do Progama")
+			escreva("\n5-Sair do Progama\n")
 			leia(opcao)
 			limpa()
 			
@@ -33,7 +33,7 @@ programa
 				listarQuartos(vagas)
 			pare
 			caso 4: 
-	//			faturamento(vagas[])
+				faturamento()
 			pare
 			caso 5: 
 				escreva("Você saiu do progama!")
@@ -98,7 +98,7 @@ programa
 	  		escreva("Este quarto não existe!") }
 
 	  	escreva("\n...voltando para o menu")	
-	  	Util.aguarde(1500)
+	  	Util.aguarde(1050)
 	  	limpa()
 	}
 	
@@ -109,15 +109,20 @@ programa
 		}
 		escreva("\n\n")
 	}
+	funcao faturamento(){
+		escreva("\n\nQuantidade de consultas: ", qtdConsultas,"\tR$ ",preConsulta)
+		escreva("\nQuantidade de internações: ",qtdInternacao,"\tR$ ",preInternacao)
+		escreva("\nTotal faturado: ","R$ ",preConsulta+preInternacao,"\n\n")
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 196; 
+ * @POSICAO-CURSOR = 1948; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {qtdInternacao, 5, 9, 13}-{preInternacao, 5, 26, 13}-{v, 73, 28, 1}-{quarto, 75, 10, 6}-{v, 105, 30, 1};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
